@@ -18,3 +18,14 @@ height: 64px; line-height: 64px; color: #333; cursor: pointer;}
 main div {margin: 1em; padding: 1em; height: 67vh; color: #333; font-weight: normal; background-color: yellow;}
 
 footer {height: 200px;}
+
+@media (max-width: 768px) { nav {display: none;}
+#menu:hover + nav{ display: inherit; text-align: right;}
+#menu:hover + nav li{ display: block; padding: 0.6em;}
+}
+
+@media (min-width:769px) { #menu {display: none;}
+#wrapper { grid-template-columns: 200px 1fr;}
+header { grid-column:  1/ -1;}
+footer {grid-column: 1/ -1;}
+}
