@@ -26,6 +26,5 @@ footer {height: 200px;}
 
 @media (min-width:769px) { #menu {display: none;}
 #wrapper { grid-template-columns: 200px 1fr;}
-header { grid-column:  1/ -1;}
-footer {grid-column: 1/ -1;}
+ header, footer { grid-column: 1 / -1; }
 }
