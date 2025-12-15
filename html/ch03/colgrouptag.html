@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {border-collapse: collapse; }
+        td {border: 1px solid #ccc; text-align: center; padding: 10px; }
+        .weekend {background-color: #eee;}
+        .color_red{color: red;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--emmet기능:table>tbody>(tr>td{_}*7)*4 
+    p.111 -->
+    <table>
+        <colgroup>
+            <col class="weekend">
+            <col span="5">
+            <col class="weekend">
+    </colgroup>
+        <thead>
+        <tr>
+            <td scope="col">일</td>
+            <td scope="col">월</td>
+            <td scope="col">화</td>
+            <td scope="col">수</td>
+            <td scope="col">목</td>
+            <td scope="col">금</td>
+            <td scope="col">토</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+        </tr>
+        <tr class="color_red">
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+            <td>_</td>
+        </tr>
+        </tbody>
+        </table>
+</body>
+</html>

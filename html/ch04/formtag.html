@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./01-result.html" method="get" autocomplete="off">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="my_name">
+        <br><br>
+        <label for="age">나이</label>
+        <input type="number" id="age" name="my_age">
+        <!-- 또는 label로 묶어버릴때
+        <lable>
+            나이 <input type="number" name="my_age">
+        </lable>-->
+        <br><br>
+        <label><input type="checkbox" value="1">결혼여부</label>
+        <label><input type="checkbox" value="축구" name="hobby">축구</label>
+        <label><input type="checkbox" value="농구" name="hobby">농구</label>
+        <label><input type="checkbox" value="배구" name="hobby">배구</label>
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">       
+        <button type="button">버튼2</button>
+        <!--버튼태그 사용시 타입은 submit으로 기본세팅이 되어있음 버튼으로만 사용시 꼭 타입변경-->
+    </form>
+</body>
+</html>
+<!--label-텍스트를 클릭했는데 포커스가 바로 갔으면 좋겠다 할때-->
+<!--라디오버튼사용시 유용하게 쓰임-->

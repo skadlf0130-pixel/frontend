@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*inline 태그, 필요한 width 공간만 차지
+        가로,세로 크기 지정 무시.
+        display: inline-block 입력시 가능*/
+        span {display: inline-block;
+            background-color: rgb(99, 99, 239);
+            margin-bottom: 20px;}
+        /*block 태그, 부모의 width 크기를 차지*/
+        div{display: block; background-color: coral;}
+        span, div{width: 140px; height: 50px;}
+    </style>
+</head>
+<body>
+    <span>span요소</span>
+
+    <div>div 요소</div>
+
+    <span>span요소</span>
+    <span>span요소</span>
+
+    <div>div 요소</div>
+    <div>div 요소</div>
+
+    <span>span요소</span>
+    <span>span요소</span>
+    <span>span요소</span>
+
+    <div>div 요소</div>
+    <div>div 요소</div>
+    <div>div 요소</div>
+</body>
+</html>

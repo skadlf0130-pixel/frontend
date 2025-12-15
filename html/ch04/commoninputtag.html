@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>인풋 요소 공통(대부분) 속성</h1>
+    <form action="#">
+        <label>
+            value <br> <input type="text" name="val" value="지정됨">
+        </label>
+        <br><br>
+        <label>
+            autofocus <br> <input type="text" name="val12" placeholder="자동 포커스" autofocus>
+            <!--autofocus 페이지들어가면 해당 입력창에 포커스가 자동으로 되어있다. 가장 상위에 있는게 좋다-->
+        </label>
+        <br><br>
+        <label>
+            readonly <br> <input type="text" name="val13" value="수정 불가능" readonly>
+            <!--readonly 수정불가능.보이지만 데이터는 저장된다.-->
+        </label>
+        <br><br>
+        <label><!--value-화면이 켜져있을때 입력창에 데이터가 자동으로 입력되어 있음. 고정값은 아님 -->
+            disabled <br> <input type="text" name="val14" value="수정,전송 불가" disabled>
+            <!--disabled 수정, 전송 둘다 불가능-->
+        </label>
+        <br><br>
+        <label><!--required 필수로 입력해야되는-->
+            required <br> <input type="text" name="val15" placeholder="필수입력" required>
+        </label>
+        <br><br>
+        <label><input type="radio" name="fruit" value="apple" checked>사과</label>
+        <label><input type="radio" name="fruit" value="grape" checked>포도</label>
+        <label><input type="radio" name="fruit" value="orange" checked>오렌지(품절)</label>
+        <br><br>
+        <button>제출</button>
+    </form>
+</body>
+</html>

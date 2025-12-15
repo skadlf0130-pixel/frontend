@@ -1,0 +1,4 @@
+.card{ background-color: #eee;}
+/*또는- .highlight도 되지만 순서를 생각하면 밑에 수식으로*/
+.card.highlight{ background-color: #ffeb3b;}
+#vip{ background-color: #f44336;}

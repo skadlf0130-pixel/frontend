@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./ddd.html">
+        <fieldset><!--<fieldset>하나당 하나의 그룹-->
+            <legend>반장</legend>
+            <label>이름 <input type="text" name="name_1"></label>
+            <br><br>
+            <label>나이 <input type="number" name="age_1"></label>
+        </fieldset>
+        <fieldset>
+            <legend>부반장</legend>
+            <label>이름 <input type="text" name="name_2"></label>
+            <br><br>
+            <label>나이 <input type="number" name="age_2"></label>            
+        </fieldset>
+        <fieldset disabled><!--disabled=전체비활성화태그. 개별적으로 하고싶을땐 input에 입력-->
+            <legend>서기</legend>
+            <label>이름 <input type="text" name="name_3"></label>
+            <br><br>
+            <label>나이 <input type="number" name="age_3"></label>            
+        </fieldset>
+    </form>
+</body>
+</html>

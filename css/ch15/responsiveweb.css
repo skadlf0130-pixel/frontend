@@ -1,0 +1,9 @@
+body{margin: 0;}
+#wrapper {display: grid; gap: 12px;}
+/*#은 아이디선택자*/
+#wrapper >*{padding: 1em;
+font-size: 1.2em; color: royalblue; font-weight: bold; background-color: lightblue;}
+
+header {position: relative; min-width: 80px;}
+
+nav ul {padding-left: 0.5em;}
