@@ -33,3 +33,13 @@ console.log('----------------논리연사자');
 console.log('!(n1 == n2):', !(n1 == n2));
 console.log('!(n1 != n2:)', !(n1 != n2));
 //!가 들어가면 반대로 생각(not)
+
+console.log('---------------- 논리연사자 && (AND)');
+console.log('true && true:',true && true);
+console.log('true && true && false:',true && true &&false);
+//false가 하나라도 들어있으면 false
+
+console.log('---------------- 논리연사자 || (OR)');
+console.log('false || false:',false || false);
+console.log('true || true  ||  false:',true  ||  true  || false);
+//true가 하나라도 들어있으면 true
