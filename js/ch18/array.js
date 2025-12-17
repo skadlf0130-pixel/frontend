@@ -20,7 +20,7 @@ const arr2= new Array(2000);
 //Array생성자 함수
 //자주쓰지는 않는다.
 
-const arr3= []; // 비워두면 무한대?
+const arr3= []; // 비워두면
 
 arr3.push(1);
 arr3.push(2);
