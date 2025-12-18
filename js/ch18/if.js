@@ -6,8 +6,12 @@ if(식 - 결과타입은 boolean)
     false라면 실행이 되지 않는다.
     }
 
-if(식) {// 식이 true인 경우 식이 되는 {} }
-       {// 식이 false인 경우 {}}
+if(식) {// 식이 true인 경우 식이 되는 {}
+} else {// 식이 false인 경우 {}
+   }
+
+식은 if뒤에만 적을수 있다 else뒤에는 쓰지 않는다.
+식을 쓰고 싶다면 else if(식)를 사용
 */
 
 const rVal = parseInt(Math.random() *25.0) + 1;

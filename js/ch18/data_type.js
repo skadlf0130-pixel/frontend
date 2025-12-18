@@ -1,6 +1,7 @@
 /*
 자료형(데이터 유형)
 -비교연사자의 결과 타입 boolean : 참(true), 거짓(false)
+대부분의 비교문의 결과가 boolean타입이라 많이 사용한다.
 
 */
 let bool1 = true;
@@ -38,8 +39,9 @@ console.log('---------------- 논리연사자 && (AND)');
 console.log('true && true:',true && true);
 console.log('true && true && false:',true && true &&false);
 //false가 하나라도 들어있으면 false
-
+/* &&을 계산한때 ((true && true) &&false)으로 계산. false가 나올 만한 식을 먼저 배치하는게 성능상 유리*/
 console.log('---------------- 논리연사자 || (OR)');
 console.log('false || false:',false || false);
 console.log('true || true  ||  false:',true  ||  true  || false);
 //true가 하나라도 들어있으면 true
+// &&의 계산법과 

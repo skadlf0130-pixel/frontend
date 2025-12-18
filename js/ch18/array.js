@@ -1,9 +1,10 @@
-/* array.js
+/* array.js p.609
+
 변수, 상수 값은 1개만 저장할수 있다.
 
 근데 숫자 5개를 저장하여 사용해야되는 상황이 발생했을때!
 
-여러값을 한 곳에 담기 위해 배열을 사용.
+배열 - 여러값을 한 곳에 담기 위해 사용.
 구분을 index(숫자)로 한다.
 index(방 번호)는 0번 부터 시작.
 //1~5까지 넣고 싶다 할때 방번호는 0~4번까지 된다
@@ -20,9 +21,10 @@ const arr2= new Array(2000);
 //Array생성자 함수
 //자주쓰지는 않는다.
 
-const arr3= []; // 비워두면
+const arr3= []; // arr3는 []의 배열의 주소값이 들어있다
 
-arr3.push(1);
+// push()의 의미 - 배열(Array)의 끝에 새로운 요소를 추가하는 메서드
+arr3.push(1); 
 arr3.push(2);
 arr3.push(3);
 arr3.push(30);
@@ -33,3 +35,5 @@ console.log('arr.length:', arr.length);
 console.log('arr2.length:', arr2.length);
 arr[1] = 11;
 console.log(arr[0], arr[1], '...', arr[4])
+console.log('arr[5]:', arr[5]);
+// 5번방이 없기에 출력하면 arr[5]: undefined 가 나온다
