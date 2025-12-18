@@ -9,6 +9,7 @@ const person1 = {
 };
 
 console.log(typeof person1);
+// typeof는 저장되어 있는 값의 타입을 알려준다
 console.log(person1);
 
 //person1이 가리키고 있는 객체의 married속성값을 true로 수정하시오
@@ -16,6 +17,7 @@ console.log(person1);
 console.log(person1); 
 
 person1.married = true;
+//만약 !를 붙이게 된다면 임시로 변경된거라 name이름은 변경이 되진 않는다.
 console.log(person1);
 
 person1['age'] = 30;

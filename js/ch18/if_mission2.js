@@ -34,7 +34,7 @@ if( score >= 90 ) {
 }
 
 if(score >= 60) {
-    if (score == 100 || score % 10 >= 8) { result = result + '+'; }
+    if (score == 100 || score % 10 >= 8) { result = result + '+'; } // 복합식
     else if (score % 10 >= 3) { result = result + '0'; }
     else if(score % 10 >= 0)  { result = result + '-';  }
 }
@@ -42,6 +42,8 @@ if(score >= 60) {
 console.log(result);
 
 /*
+패턴을 찾아서 식을 만들어서 해결.
+
 result += '-'; 
 result = result + '-';
 둘 다 같은 식?

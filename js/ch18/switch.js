@@ -1,4 +1,5 @@
 /* swtich.js
+같은 값을 찾을때 사용
 
 switch(숫자값) {
     case 1:

@@ -1,7 +1,10 @@
 /* object.js 
-자바스크립트에서 객체를 만드는 방법
+자바스크립트에서 객체를 만드는 방법 { } 중괄호로 만든다.
 
-객체는 (속성),(메소드) 로 이루어 질 수 있다.
+객체는 (속성.값),(메소드.기능) 로 이루어 질 수 있다.
+속성은 저장하는 용도(데이터)(상태)
+메서드는 기능(동작). 결국 함수
+
 키:값
 key:value(속성값 or 함수(function))
 
@@ -20,7 +23,7 @@ const person1 = {
     married : false,   //속성:속성값
     run : function() {console.log('나는 뛴다.!!!');} //전체가 메소드 (객체안에 들어가 있으면 메소드)
 };
-
+//함수 function
 person1.run();
 
 const person2 = person1;
@@ -36,3 +39,6 @@ console.log('person1.name:', person1.name);
 console.log('person2.name:', person2.name);
 console.log('person1.age:', person1.age);
 console.log('person2.age:', person2.age);
+
+//bbb.abc.ddd.uuu
+//객체.객체.객체.객체 ....
