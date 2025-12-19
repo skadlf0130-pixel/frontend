@@ -1,0 +1,12 @@
+/* for_array_mission04.js
+배열에서 가장 큰 값과 작은 값을 찾아서 출력해 주세요.
+*/
+const arr = [ 3, 8, 11, 86, 43, 22, 27 ]; 
+
+
+let max = arr[0], min = arr[0];
+for(let i=0; i<arr.length; i++) {
+    if(max<arr[i]){max=arr[i];}
+    if(min>arr[i]){min=arr[i];}
+}
+console.log(`최소값:${min}, 최대값:${max}`)
