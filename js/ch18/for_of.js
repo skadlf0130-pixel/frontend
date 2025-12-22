@@ -1,4 +1,4 @@
-/* p.625 for_array02.js
+/* p.625 for_of.js
 
 읽기만 하고 싶다 for-of문사용
 읽기 쓰기 다하고 싶다 for문
