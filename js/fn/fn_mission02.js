@@ -15,3 +15,10 @@ function returnabs(n1){
 const abs = returnabs(10);
 
 console.log('절대값:', abs);
+
+/*
+function abs(num) {
+    return num <0 ? -num : num;
+}
+    
+*/
