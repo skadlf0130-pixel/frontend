@@ -12,12 +12,14 @@
         n2: <input type="number" id="n2">
         <br>
         <button id="btn_add">더하기</button>
+        <button id="btn_mltipy">곱하기</button>
         <div id="result"></div>
     </div>
     <script>
         const $inputN1= document.querySelector('#n1');
         const $inputN2= document.querySelector('#n2');
         const $btnAdd= document.querySelector('#btn_add');
+        const $btnMltipy= document.querySelector('#btn_mltipy');
         const $result= document.querySelector('#result');
         console.log($inputN1, $inputN2, $btnAdd);
 
@@ -26,18 +28,26 @@
         //특정 이벤트가 발생되면 함수가 실행되게 세팅한다.
         //$btnAdd버튼 객체에 clik 이벤트바인딩
         //addEventListener 메소드에는 아규먼트 2개를 보내야한다.
-        //첫번째 값: 이벤트 이름
+        //첫번째 값: 이벤트 이름(문자열)
         //두번째 값: 함수 주소값
         $btnAdd.addEventListener('click', function(){
-            // alert('더하기 버튼 클릭');
+            //alert('더하기 버튼 클릭');
             const n1 = $inputN1.value;//value속성에는 문자열만 저장된다.
             const n2 = $inputN2.value;
             
             console.log(`n1:${n1} , n2:${n2}`);
 
             const addValue = Number(n1) + Number(n2);
-            //Number를 붙이면 강제 형변환이 되어 숫자로 만들어 합계를 출력
             $result.innerText = addValue;
+        });   
+
+        $btnMltipy.addEventListener('click', function(){
+            const n1 = $inputN1.value;
+            const n2 = $inputN2.value;
+
+            const btnMltipy = Number(n1) * Number(n2)
+            $result.innerText = btnMltipy;
+
         });            
     </script>
 </body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ICON EDITOR</h1>
+    <div id="editor"></div>
+    <script>
+        //엘리먼트 생성 함수
+        //첫번째 파라미터: 태그명(문자열)
+        //두번째 파라미터: 객체
+        function makeElement(name, attributes) {
+            const node = document.createElement(name);
+            
+            /*true, false로 용인 되는게 있다.
+                문자열은 빈 문자열은 false, !(빈 문자열)은 true 처리
+                숫자 0은 false, !0 은 true
+                객체 주소값은 true, undefined/null은 false
+            */
+            if(attributes) { 
+                for (const item in attributes) {
+                    node.setAttribute(item, attributes[item]); 
+                    //set 객체안에 값을 집어넣는
+                }
+            }
+            return node;
+        }
+
+        const $editor = document.querySelector('#editor');
+        const attributes = {
+            'type' : 'number',
+            'value': '100'
+        }
+        const temp = makeElement('input',attributes);
+        $editor.append(temp);//append는 내자식중 가장 뒤에 들어오고 싶을때. 앞에 오고 싶으면 prepend로
+    </script>
+
+</body>
+</html>
