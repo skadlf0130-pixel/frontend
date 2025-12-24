@@ -26,6 +26,15 @@
 
             const $inputColorClear= makeElement('input',{type:'button', value:'clear'});
             target.append($inputColorClear);
+            $inputColorClear.addEventListener('click',()=> {
+                console.log('clear버튼 클릭');
+                const tdList =document.querySelectorAll('td'); 
+                for(const item of tdList){
+                item.style.backgroundColor='';
+                
+                }
+            }
+        )
 
             const $table = makeElement('table');
             target.append($table);
@@ -41,9 +50,10 @@
                 $td.style.width = $td.style.height = '15px';
                 $td.style.border = '1px solid gray';
                 
-                $td.addEventListener('click',() => { 
+                $td.addEventListener('click', e => { 
                     //closure 클로져(실제론 실행이 되면 안되지만 이벤트에 묶여있어 실행이 된다.)
-                    $td.style.backgroundColor=$inputColor.value;
+                    const bColor = e.target.style.backgroundColor;
+                    e.target.style.backgroundColor = bColor ? '' : $inputColor.value;
                 })
                 
                 }            
