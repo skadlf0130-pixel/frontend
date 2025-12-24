@@ -13,6 +13,7 @@ console.log(arr3)
 // 체이닝
 const arr4 = arr.filter(item => item % 2 === 0)
             .map(item=> item / 2);
+            
 
 console.log(arr4)
 
