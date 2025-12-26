@@ -12,7 +12,7 @@ const myArr = {
     'forEach': function(){
         for( let i=0; i<this.length; i++){
             console.log(this[i]);
-        }
+        }//this.length 쓰면 객체안에 정보들을 가져올수 있다
     }
 };
 
