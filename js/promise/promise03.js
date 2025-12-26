@@ -1,0 +1,31 @@
+/* promise03.js
+
+async, await 사용법, 무조건 함수가 필요
+
+then, catch 사용하지 않겠다.
+
+
+*/
+const increaseAndPrintPromise =(n)=>{
+    return new Promise(resolve => {
+        setTimeout(() => {
+            const increased= n+1;
+            console.log('increased:',increased);
+            resolve(increased);
+        }, 1000)
+    })
+}
+/*
+async의 역활은 await를 사용할 수 있는 함수를 생성
+awaitf를 사용하려면 async함수에서만 가능하다.
+await 우측은 무조건! promise객체 주소값이 있어야한다.
+await는 우측에 결과가 넘어올 때까지 기다린다.
+*/
+
+const callFunctiom = async(n) =>{
+    const result = await increaseAndPrintPromise(n);
+    console.log('result:', result);
+    const result2 = await increaseAndPrintPromise(result);
+    console.log('result2:', result2)
+}
+callFunctiom(10);
