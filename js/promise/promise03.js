@@ -19,7 +19,8 @@ const increaseAndPrintPromise =(n)=>{
 async의 역활은 await를 사용할 수 있는 함수를 생성
 awaitf를 사용하려면 async함수에서만 가능하다.
 await 우측은 무조건! promise객체 주소값이 있어야한다.
-await는 우측에 결과가 넘어올 때까지 기다린다.
+await는 우측에 결과가 넘어올 때까지 기다린다. resolve 호출할 때 넘겨줬던 아규먼트값을 받을 때 사용.
+reject 아규먼트값은 try-catch 문법으로 받아야한다.
 */
 
 const callFunctiom = async(n) =>{
