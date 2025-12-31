@@ -1,4 +1,4 @@
-/*for_array01.js
+랙/*for_array01.js
 
 
 */
